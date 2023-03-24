@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+  
+.jumbotron {
+    background-color: #f8f9fa;
+
+margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .img_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+  }
+  
+  .img_container > div {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: none;
+  }
+  
+  /* .img_container > div:not(:last-child) {
+    margin-right: 0.5%;
+  } */
+  
+  .img_container img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover !important;
+    transition: all 0.3s ease;
+  }
+  
+  .img_container img:hover {
+    transform: scale(1.2) translateX(10%);
+    margin-left: -10%;
+   
+  }
+  
+
+  .booking{
+    position: absolute;
+    visibility: hidden;
+    transition: 0.3s ease;
+
+  }
+
+  .booking > p{
+   
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 10px;
+    padding-right: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 10px;
+    
+  }
+
+  .b1{
+    top: 75%;
+    left: 1%;
+   
+  }
+
+  .b2{
+    top: 75%;
+    left: 26%;
+ 
+  }
+
+  .b3{
+    top: 75%;
+    left: 51%;
+    
+  }
+  .b4{
+    top: 75%;
+    left: 76%;
+    
+  }
+  .img_container > div:hover .flight {
+    transform: translateX(300%);
+  }
+
+  .img_container > div:hover .booking {
+    visibility: visible;
+  }
+
+  .flight{
+    width: 50px !important;
+    height: 50px !important;
+    margin-top: -43px;
+    position: absolute;
+    transition: 0.3s ease;    
+  }
+
+  
